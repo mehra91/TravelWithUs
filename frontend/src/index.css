@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply font-sans text-forest bg-cream;
+}
+
+@media (max-width: 767px) {
+  .mobile-nav {
+    min-height: calc(4.25rem + env(safe-area-inset-bottom));
+    padding-bottom: max(0.5rem, env(safe-area-inset-bottom));
+  }
+}
